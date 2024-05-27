@@ -1,6 +1,5 @@
 'use client'
 
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import 'react-toastify/dist/ReactToastify.css'
 import 'simplebar-react/dist/simplebar.min.css'

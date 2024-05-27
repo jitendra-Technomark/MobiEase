@@ -1,12 +1,12 @@
 'use client'
 
 import React, { useState } from 'react'
-import TextInput from '@/components/ui/TextInput'
+import Link from 'next/link'
+import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
+import TextInput from '@/components/ui/TextInput'
 import CheckBox from '@/components/ui/CheckBox'
-import Link from 'next/link'
 
 const schema = yup
   .object({

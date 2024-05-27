@@ -2,10 +2,10 @@
 
 import React from 'react'
 import Link from 'next/link'
-import ForgotPass from '@/components/partials/auth/forgot-pass'
+import Lock from '@/components/partials/auth/lock'
 import useDarkMode from '@/hooks/useDarkMode'
 
-const ForgotPassword = () => {
+const LockScreen = () => {
   const [isDark] = useDarkMode()
 
   return (
@@ -25,8 +25,8 @@ const ForgotPassword = () => {
               Welcome to <span className='font-bold text-slate-800 dark:text-slate-400'>MobiEase</span>
             </h4>
           </div>
-          <div className='absolute bottom-[-130px] left-0 z-[-1] h-full w-full'>
-            <img src='/assets/images/auth/forgot_pass.svg' alt='' className='h-full w-full object-contain' />
+          <div className='absolute bottom-[-130px] left-0 z-[-1] h-full w-full 2xl:bottom-[-160px]'>
+            <img src='/assets/images/auth/lock-screen.svg' alt='' className='h-full w-full object-contain' />
           </div>
         </div>
         <div className='right-column relative'>
@@ -34,28 +34,26 @@ const ForgotPassword = () => {
             <div className='auth-box2 flex h-full flex-col justify-center'>
               <div className='mobile-logo mb-6 block text-center lg:hidden'>
                 <Link href='/'>
-                  <img
-                    src={isDark ? '/assets/images/logo/logo-white.svg' : '/assets/images/logo/logo.svg'}
-                    alt=''
-                    className='mx-auto'
-                  />
+                  <img src='/assets/images/logo/logo.svg' alt='' className='mx-auto' />
                 </Link>
               </div>
-              <div className='mb-5 text-center 2xl:mb-10'>
-                <h4 className='mb-4 font-medium'>Forgot Your Password?</h4>
-                <div className='text-base text-slate-500 dark:text-slate-400'>Reset Password with Dashcode.</div>
+              <div className='mb-10 text-center'>
+                <h4 className='mb-4 font-medium'>Lock Screen</h4>
+                <div className='text-base text-slate-500 dark:text-slate-400'>Enter your password to unlock the screen!</div>
               </div>
-              <div className='mb-4 mt-10 rounded bg-slate-100 px-2 py-3 text-center text-base font-normal text-slate-500 dark:bg-slate-600 dark:text-slate-400'>
-                Enter your Email and instructions will be sent to you!
+              <div className='author-bio mb-8 text-center'>
+                <div className='mx-auto h-14 w-14 rounded-full'>
+                  <img src='/assets/images/users/user-big.png' alt='' className='block h-full w-full object-cover' />
+                </div>
+                <div className='mt-4 text-base font-medium text-slate-900 dark:text-white'>Kathryn Murphy</div>
               </div>
+              <Lock />
 
-              <ForgotPass />
-              <div className='mx-auto mt-8 text-sm font-normal uppercase text-slate-500 dark:text-slate-400 md:max-w-[345px] 2xl:mt-12'>
-                Forget It,{' '}
+              <div className='mx-auto mt-12 text-sm font-normal uppercase text-slate-500 dark:text-slate-400 md:max-w-[345px]'>
+                Not you ? return to{" "}
                 <Link href='/' className='font-medium text-slate-900 hover:underline dark:text-white'>
-                  Send me Back
-                </Link>{' '}
-                to The Sign In
+                  Sign In
+                </Link>
               </div>
             </div>
             <div className='auth-footer text-center'>Copyright 2024, MobiEase All Rights Reserved.</div>
@@ -66,4 +64,4 @@ const ForgotPassword = () => {
   )
 }
 
-export default ForgotPassword
+export default LockScreen
