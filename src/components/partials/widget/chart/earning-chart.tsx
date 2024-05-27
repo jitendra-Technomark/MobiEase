@@ -7,7 +7,7 @@ const EarningChart = ({ className = 'bg-slate-50 dark:bg-slate-900 rounded py-3 
   const [isDark] = useDarkMode()
   const series = [44, 55]
 
-  const options = {
+  const options: any = {
     labels: ['success', 'Return'],
     dataLabels: {
       enabled: false,
