@@ -50,7 +50,7 @@ const LockScreen = () => {
               <Lock />
 
               <div className='mx-auto mt-12 text-sm font-normal uppercase text-slate-500 dark:text-slate-400 md:max-w-[345px]'>
-                Not you ? return to{" "}
+                Not you ? return to{' '}
                 <Link href='/' className='font-medium text-slate-900 hover:underline dark:text-white'>
                   Sign In
                 </Link>

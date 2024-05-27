@@ -14,7 +14,6 @@ import HorizentalMenu from './Tools/HorizentalMenu'
 import Icon from '@/components/ui/Icon'
 
 const Header = ({ className = 'custom-class' }) => {
-
   const [collapsed, setMenuCollapsed] = useSidebar()
   const { width, breakpoints } = useWidth()
   const [navbarType] = useNavbarType()
@@ -33,7 +32,7 @@ const Header = ({ className = 'custom-class' }) => {
         return 'sticky top-0'
     }
   }
-  
+
   const [menuType] = useMenulayout()
   const [skin] = useSkin()
   const [isRtl] = useRtl()

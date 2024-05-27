@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { handleDarkMode } from '@/store/layoutReducer'
 
-const usedarkMode = () => {
+const useDarkMode = () => {
   const dispatch = useDispatch()
   const isDark = useSelector((state: any) => state.layout.darkMode)
 
@@ -23,4 +23,4 @@ const usedarkMode = () => {
   return [isDark, setDarkMode]
 }
 
-export default usedarkMode
+export default useDarkMode

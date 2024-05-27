@@ -12,7 +12,7 @@ import '@/scss/app.scss'
 import { Provider } from 'react-redux'
 import store from '@/store'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 // export const metadata: Metadata = {
 //   title: "MobiEase",

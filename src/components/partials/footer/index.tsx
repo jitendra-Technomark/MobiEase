@@ -23,7 +23,7 @@ const Footer = ({ className = 'custom-class' }) => {
           <div className='text-center text-sm ltr:md:text-right rtl:md:text-end'>
             Hand-crafted & Made by{' '}
             <a href='#' target='_blank' className='font-semibold text-primary-500'>
-              JH
+              JS
             </a>
           </div>
         </div>
