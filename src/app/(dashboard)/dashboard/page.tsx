@@ -8,6 +8,7 @@ import SelectMonth from '@/components/partials/SelectMonth'
 import OrderChart from '@/components/partials/widget/chart/order-chart'
 import ProfitChart from '@/components/partials/widget/chart/profit-chart'
 import EarningChart from '@/components/partials/widget/chart/earning-chart'
+import TableOne from '@/components/partials/table/TableOne'
 
 const Dashboard = () => {
   return (
@@ -56,6 +57,7 @@ const Dashboard = () => {
           </Card>
         </div>
       </div>
+      <TableOne title='Latest Orders' />
     </div>
   )
 }

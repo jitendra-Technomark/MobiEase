@@ -88,7 +88,7 @@
   }
 }
 @layer components {
-  // @import "components/table.scss";
+  @import "components/table.scss";
   // @import "components/map.scss";
   // @import "components/progress";
   @import "components/tippy";
@@ -102,7 +102,7 @@
   @import 'components/form';
   // @import "components/input-group";
   @import 'components/react-select';
-  // @import "components/pagination";
+  @import "components/pagination";
   @import "components/breadcrumbs";
   @import "layout/header";
   @import "layout/footer";
